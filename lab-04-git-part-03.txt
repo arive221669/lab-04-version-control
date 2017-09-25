@@ -101,13 +101,13 @@ hi there!
 
 ==========
 12. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
-----------
+/users/student/
 
 
 ==========
 13.  Go back to the directory that your hello.sh script was in.  What command did you use to change to this directory? 
 ----------
-
+cd student
 
 ==========
 14. Type in the following command:
@@ -116,7 +116,7 @@ echo $PATH
 
 Write down the output of this command
 ----------
-
+/opt/local/bin:/Applications/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 
 ==========
 15. Type in the following command to show all environment variables:
@@ -125,7 +125,9 @@ env
 
 Write down the last two lines of output for this command
 ----------
-
+DISPLAY=/private/tmp/com.apple.launchd.V1JzZRjiEl/org.macosforge.xquartz:0
+_=/usr/bin/env
+OLDPWD=/users/student/ARivera
 
 ==========
 16. Set your PATH to include your home directory.  Do the following (substituting student or username for professor)
@@ -138,7 +140,7 @@ echo $PATH
 
 Write down the output of the last command.  It should include your home folder.
 ----------
-
+/opt/local/bin:/Applications/anaconda/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/pofessor:/Users/professor
 
 ==========
 17.  Go back to root (/)
@@ -149,7 +151,7 @@ hello.sh
 
 It should work now!  What is the output?
 ----------
-
+hi there!
 
 ==========
 18.  Save this file in the repository that you created from parts 1 and 2.
