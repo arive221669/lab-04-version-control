@@ -54,8 +54,8 @@ student           7909   0.0  0.0  2444300   1264 s000  S+    2:52PM   0:00.00 n
 6. Go to your other terminal window.  What happened to nano?  What was the message on the screen?
 
 ----------
-
-
+nano closed
+Received SIGHUP or SIGTERM
 ==========
 7. Close the terminal window that nano was in, and go back to the terminal where you ran ps.
 
@@ -73,26 +73,31 @@ Quit and save when you're done.
 
 What command did you use to do this?
 ----------
-
+touch hello.sh
+nano hello.sh
+<CTRL> o
+<ENTER>
+<CTRL> x
 
 ==========
 9. Change the permissions (modify) on hello.sh so that the *user* (u) can *execute* (x) it: 
 
 Write the commands that you used to do this below.
 ----------
-
+chmod u+x hello.sh
 
 ==========
 10. Run your script (hello.sh).
 
 How did you do this?  What was the output?
 ----------
-
+./hello.sh
+hi there!
 
 ==========
 11. Change to the root directory.  Try running your script again (hello.sh).  What was the output (if there's an error, write it out)?
 ----------
-
+-bash: ./hello.sh: No such file or directory
 
 ==========
 12. Now trying using the full, absolute path to your script (that is, starting with /...).  What did you write in?  What did it do?
